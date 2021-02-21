@@ -11,19 +11,148 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'MyApp',
       theme: ThemeData(      
-        primarySwatch: Colors.blue,       
+        primarySwatch: Colors.red,       
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
           title: Text("MyApp"),
         ),
-        body: Container(alignment: Alignment.topCenter,
-               margin: EdgeInsets.all(20), 
-              child: Text("PERTANDINGAN HARI INI \t\t\t\t\t BERITA HARI INI")),),
-    );
-  }
-}
+     body: ListView(
+          children: <Widget>[
+              Container(
+                padding: EdgeInsets.all(10) ,
+                alignment:Alignment.center,
+                child: Text("BERITA TERBARU\t\t\t\t\t\t\t\tPERTANDINGAN HARI INI", 
+                    style: TextStyle(
+                      fontSize:14,
+                      color:Colors.black)),
+              ), 
+              Container(
+                padding: EdgeInsets.only(left:5,right:5),
+                alignment:Alignment.center, 
+                child: Image(image: NetworkImage('https://cdns.klimg.com/bola.net/library/upload/21/2018/08/diego-costa_1f8df76.jpg'),
+                      ),
+              ),
+              Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                alignment:Alignment.center,
+                child: Text("Costa Mendekat Ke Palmeiras",
+                     style: TextStyle(
+                       fontSize:17,
+                       color:Colors.black, 
+                       fontWeight:FontWeight.bold)
+                       ),
+              ),
+              Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                height: 50,
+                color: Colors.purple[200],
+                alignment:Alignment.centerLeft,
+                child: Text("Transfer",
+                  style: TextStyle(
+                  fontSize:14,
+                  color:Colors.black)
+                  ),
+              ),
+              Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                child: Column(children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Image.network(
+                            'https://asset.indosport.com/article/image/q/80/318845/gerard_pique-169.jpg?w=750&h=423'),
+                      ),
+                      SizedBox(width: 10,
+                        ),
+                      Expanded(
+                          child: Center(
+                        child: Text(
+                            "Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat",
+                            style: TextStyle(fontSize: 12)),
+                      )
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],),],),
+                  ),
+Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                child: Column(children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Image.network(
+                            'https://asset.indosport.com/article/image/q/80/318845/gerard_pique-169.jpg?w=750&h=423'),
+                      ),
+                      SizedBox(width: 10,
+                        ),
+                      Expanded(
+                          child: Center(
+                        child: Text(
+                            "Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat",
+                            style: TextStyle(fontSize: 12)),
+                      )
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],),],),
+                  ),
+                  Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                child: Column(children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Image.network(
+                            'https://asset.indosport.com/article/image/q/80/318845/gerard_pique-169.jpg?w=750&h=423'),
+                      ),
+                      SizedBox(width: 10,
+                        ),
+                      Expanded(
+                          child: Center(
+                        child: Text(
+                            "Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat",
+                            style: TextStyle(fontSize: 12)),
+                      )
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],),],),
+                  ),
+                  Container(
+                padding: EdgeInsets.only(left:5,right:5,top:10,bottom: 10),
+                child: Column(children: <Widget>[
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Image.network(
+                            'https://asset.indosport.com/article/image/q/80/318845/gerard_pique-169.jpg?w=750&h=423'),
+                      ),
+                      SizedBox(width: 10,
+                        ),
+                      Expanded(
+                          child: Center(
+                        child: Text(
+                            "Pique Bilang Wasit Untungkan Madrid, Koeman Tepuk Jidat",
+                            style: TextStyle(fontSize: 12)),
+                      )
+                      ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                    ],),],),
+                  ),
+ ],
+ ),
+ ),
+ );
+ }
+} 
 
 
 class MyHomePage extends StatefulWidget {
